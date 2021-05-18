@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
           <a href="https://github.com/ZachLegros" target="_blank">
             Zach Legros
           </a>
+          .{" "}
         </footer>
       </div>
     </>
