@@ -1,8 +1,18 @@
+input {
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--gray);
+  padding: 0.4rem 0.6rem;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  height: 42px;
+  width: 100%;
+}
+
 input:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--primary-focus);
-  border-color: var(--primary-focus);
-  transition: box-shadow 0.2s;
+  border-color: var(--primary);
+  transition: box-shadow 0.2s, border-color 0.2s;
 }
 
 input[type="checkbox"],
@@ -27,7 +37,9 @@ input[type="radio"] {
   border: 2px solid var(--bc, var(--border));
   background: var(--b, var(--background));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  box-shadow: none;
 }
+
 input[type="checkbox"]:after,
 input[type="radio"]:after {
   content: "";
