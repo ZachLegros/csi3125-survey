@@ -38,13 +38,18 @@
 .select select option[value=""][disabled] {
   display: none;
 }
+
 .select select:focus {
   outline: none;
-  border-color: var(--primary);
   box-shadow: 0 0 0 2px var(--primary-focus);
 }
+
 .select select:hover + svg {
   stroke: var(--primary);
+}
+
+.select select:hover {
+  border-color: var(--primary);
 }
 .sprites {
   position: absolute;

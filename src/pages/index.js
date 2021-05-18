@@ -13,11 +13,11 @@ const IndexPage = () => (
     <Container>
       <h1>Twitter UI Survey</h1>
       <p>
-        We would like to have your thoughts on the{" "}
+        We would love to hear from you on the{" "}
         <a href="https://twitter.com/home" target="_blank">
           Twitter
         </a>{" "}
-        homepage user interface.
+        home page UI.
       </p>
       <a
         href="https://twitter.com/home"
@@ -125,6 +125,14 @@ const IndexPage = () => (
             )
           }
         )}
+      </div>
+      <div className="input-section">
+        <h2>Other comments</h2>
+        <textarea
+          style={{
+            height: "150px",
+          }}
+        />
       </div>
       <button style={{ marginTop: "1rem" }}>Submit</button>
     </Container>
