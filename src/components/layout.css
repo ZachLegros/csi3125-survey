@@ -7,12 +7,14 @@ html {
   --primary: #22b2ea;
   --primary-focus: rgba(34, 178, 234, 0.4);
   --gray: #ddeaee;
+  --light-gray: #f1f4f8;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
+  background-color: var(--light-gray);
   font-family: "Open sans", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
