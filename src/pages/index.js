@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Input from "../components/Input"
 
 const IndexPage = () => (
   <Layout>
@@ -21,12 +20,34 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>{/* <Link to="/page-2/">Go to page 2</Link> <br /> */}</p>
-    <Input placeholder="Full name" />
+    <input type="text" placeholder="Full name" />
     <br />
     <input id="r1" type="radio" name="radio" value="1" />
     <label for="r1">Radio</label>
     <input id="c1" type="checkbox" name="checkbox" value="1" />
     <label for="c1">Checkbox</label>
+    <label class="select" for="slct">
+      <select id="slct" required="required">
+        <option value="" disabled="disabled" selected="selected">
+          Select option
+        </option>
+        <option value="#">One</option>
+        <option value="#">Two</option>
+        <option value="#">Three</option>
+        <option value="#">Four</option>
+        <option value="#">Five</option>
+        <option value="#">Six</option>
+        <option value="#">Seven</option>
+      </select>
+      <svg>
+        <use href="#select-arrow-down"></use>
+      </svg>
+    </label>
+    <svg class="sprites">
+      <symbol id="select-arrow-down" viewbox="0 0 10 6">
+        <polyline points="1 1 5 5 9 1"></polyline>
+      </symbol>
+    </svg>
   </Layout>
 )
 
