@@ -1,6 +1,6 @@
 .website-preview {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .website-preview:hover {
