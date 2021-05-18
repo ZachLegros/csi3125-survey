@@ -52,38 +52,81 @@ const IndexPage = () => (
         </div>
         <div className="input-group">
           <p className="input-title">Last name</p>
-          <input type="text" placeholder="Enter your Last name" />
+          <input type="text" placeholder="Enter your last name" />
+        </div>
+        <div className="input-group">
+          <p className="input-title">Your program of study</p>
+          <label class="select" for="slct">
+            <select id="slct" required="required">
+              <option value="" disabled="disabled" selected="selected">
+                Select option
+              </option>
+              <option value="#">Software Engineering</option>
+              <option value="#">Computer Science</option>
+              <option value="#">Computer Engineering</option>
+              <option value="#">Visual Arts</option>
+              <option value="#">Other</option>
+            </select>
+            <svg>
+              <use href="#select-arrow-down"></use>
+            </svg>
+          </label>
+          <svg class="sprites">
+            <symbol id="select-arrow-down" viewbox="0 0 10 6">
+              <polyline points="1 1 5 5 9 1"></polyline>
+            </symbol>
+          </svg>
         </div>
       </div>
       <div className="input-section">
-        <h2>What do you like?</h2>
+        <h2>Which components do you think need to be redesigned?</h2>
+        {[
+          "Home feed",
+          "Navigation menu (left)",
+          "Search bar",
+          "Suggestions panel (right)",
+          "None, they all look great!",
+        ].map((value, index) => {
+          return (
+            <div
+              style={{
+                marginBottom: "1rem",
+              }}
+            >
+              <input
+                id={`c${index}`}
+                type="checkbox"
+                name="checkbox"
+                value={`${index}`}
+              />
+              <label for={`c${index}`}>{value}</label>
+            </div>
+          )
+        })}
       </div>
-      <input id="r1" type="radio" name="radio" value="1" />
-      <label for="r1">Radio</label>
-      <input id="c1" type="checkbox" name="checkbox" value="1" />
-      <label for="c1">Checkbox</label>
-      <label class="select" for="slct">
-        <select id="slct" required="required">
-          <option value="" disabled="disabled" selected="selected">
-            Select option
-          </option>
-          <option value="#">One</option>
-          <option value="#">Two</option>
-          <option value="#">Three</option>
-          <option value="#">Four</option>
-          <option value="#">Five</option>
-          <option value="#">Six</option>
-          <option value="#">Seven</option>
-        </select>
-        <svg>
-          <use href="#select-arrow-down"></use>
-        </svg>
-      </label>
-      <svg class="sprites">
-        <symbol id="select-arrow-down" viewbox="0 0 10 6">
-          <polyline points="1 1 5 5 9 1"></polyline>
-        </symbol>
-      </svg>
+      <div className="input-section">
+        <h2>What is your favorite aspect of the design?</h2>
+        {["Color scheme", "Overall layout", "Accessibility features"].map(
+          (value, index) => {
+            return (
+              <div
+                style={{
+                  marginBottom: "1rem",
+                }}
+              >
+                <input
+                  id={`r${index}`}
+                  type="radio"
+                  name="radio"
+                  value={`${index}`}
+                />
+                <label for={`r${index}`}>{value}</label>
+              </div>
+            )
+          }
+        )}
+      </div>
+      <button style={{ marginTop: "1rem" }}>Submit</button>
     </Container>
   </Layout>
 )

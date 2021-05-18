@@ -5,6 +5,7 @@ import "@fontsource/open-sans"
 import "./layout.css"
 import "./inputs.css"
 import "./select.css"
+import "../components/button.css"
 
 const Layout = ({ children }) => {
   return (
