@@ -14,7 +14,7 @@ const IndexPage = () => (
       <h1>Twitter UI Survey</h1>
       <p>
         We would love to hear from you on the{" "}
-        <a href="https://twitter.com/home" target="_blank">
+        <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
           Twitter
         </a>{" "}
         home page UI.
@@ -22,6 +22,7 @@ const IndexPage = () => (
       <a
         href="https://twitter.com/home"
         target="_blank"
+        rel="noreferrer"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -32,7 +33,7 @@ const IndexPage = () => (
         }}
       >
         <StaticImage
-          src={"../images/twitter.png"}
+          src="../images/twitter.png"
           width={700}
           quality={100}
           formats={["AUTO", "WEBP", "AVIF"]}

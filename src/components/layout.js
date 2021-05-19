@@ -19,7 +19,11 @@ const Layout = ({ children }) => {
         >
           Built and designed by
           {` `}
-          <a href="https://github.com/ZachLegros" target="_blank">
+          <a
+            href="https://github.com/ZachLegros"
+            target="_blank"
+            rel="noreferrer"
+          >
             Zach Legros
           </a>
           .{" "}

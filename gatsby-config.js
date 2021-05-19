@@ -3,6 +3,7 @@ module.exports = {
     title: `Twitter UI Survey`,
     author: `Zachary Legros`,
   },
+  pathPrefix: `/csi3125-survey`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -28,5 +29,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-offline`,
   ],
 }
