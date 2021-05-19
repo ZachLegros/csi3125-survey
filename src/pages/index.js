@@ -9,7 +9,7 @@ import "../components/survey.css"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="UI Survey" />
+    <Seo title="Survey" />
     <Container>
       <h1>Twitter UI Survey</h1>
       <p>
@@ -32,7 +32,7 @@ const IndexPage = () => (
         }}
       >
         <StaticImage
-          src="../images/twitter.png"
+          src={"../images/twitter.png"}
           width={700}
           quality={100}
           formats={["AUTO", "WEBP", "AVIF"]}

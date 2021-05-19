@@ -599,8 +599,27 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.layout {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 4rem 1rem;
+}
+
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 100% !important;
+  }
+
+  .layout {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 }

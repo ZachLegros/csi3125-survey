@@ -10,14 +10,7 @@ import "../components/button.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `50rem`,
-          padding: `4rem 1.0875rem`,
-          background: `var(--light-gray)`,
-        }}
-      >
+      <div className="layout">
         <main>{children}</main>
         <footer
           style={{
