@@ -1,7 +1,7 @@
 # CSI3125 Lab 1 | Surveys
 
-* previe available at https://zachlegros.github.io/csi3125-survey/
-The first lab deliverable for the CSI3125 UI course.
+* First lab deliverable for the CSI3125 UI course.
+* Preview available at https://zachlegros.github.io/csi3125-survey/
 
 ## Description
 
