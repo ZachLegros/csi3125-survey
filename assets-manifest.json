@@ -1,5 +1,4 @@
 {
   "main.js": "render-page.js",
-  "render-page.js.map": "render-page.js.map",
-  "static/twitter.png": "static/twitter-ef57b173f00a511fd9e531e9d7f67578.png"
+  "render-page.js.map": "render-page.js.map"
 }
