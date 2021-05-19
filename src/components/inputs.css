@@ -7,8 +7,12 @@ textarea {
   padding: 0.4rem 0.6rem;
   box-shadow: 0 1px 3px -2px #9098a9;
   height: 42px;
-  width: 20rem;
   transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+input {
+  width: 100%;
+  max-width: 20rem;
 }
 
 input:focus,

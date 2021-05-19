@@ -18,7 +18,8 @@
 .select select {
   -webkit-appearance: none;
   padding: 7px 40px 7px 12px;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   height: 42px;
   border-radius: 0.25rem;
   border: 1px solid var(--gray);
